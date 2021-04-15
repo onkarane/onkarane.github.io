@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!--Title of the page-->
+        <title>Work</title>
+        <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+        <!--Load stylesheets-->
+        <link rel="stylesheet" href="css/work.css">
+
+        <!--Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+
+    <body>
+        <!--Nav Bar-->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">ONKAR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span id = "toggler" class="fas fa-bars"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="education.html">EDUCATION</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="work.html">MY WORK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="viz.html">VISUALIZATIONS</a>
+                </li>
+              </ul>
+              
+            </div>
+          </nav>
+        <!--End of Nav-->
+        <header class="mt-3">
+            <h1>MY WORK</h1>
+            <div><hr></div>
+        </header>
+        <!--End header-->
+        <div class="container">
+            <div class="row">
+                <!--Customer Segmentation-->
+                <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
+                    <div id = "w-1" class="card mx-auto" style="width: 23rem; height: 30rem;background: rgb(215, 240, 255);">
+                        <img id = "intro-img" class="card-img-top mx-auto" src="css/images/segmentation.png" height="200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Segmentation</h5>
+                            <p class="card-text">
+                                Segmented customers Starbucks customers into 3 distinct clusters for marketing campaign based on offers received / viewed / completed 
+                                by customers along with the transaction details such as amount spent & rewarded back.
+                            </p>
+                            <button type="button" id = "modal-btn" class="btn btn-outline-dark mb-2" data-toggle="modal" data-target="#seg-modal">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--End Customer Segmentation-->
+                <!--Start of Chelsea Dashboard-->
+                <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
+                    <div id = "w-1" class="card mx-auto" style="width: 23rem; height: 30rem; background: rgb(215, 240, 255);">
+                        <img id = "intro-img" class="card-img-top mx-auto" src="css/images/chelsea.png" height="200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Soccer Analytics Dashboard</h5>
+                            <p class="card-text">
+                                A Python script that uses Selenium, and executes periodically using crontab  
+                                to scrape EPL website and collect game stats for Chelsea's future & 
+                                past games and finally, stores the data in normalized form to be further visualized in Tableau Dashboard.
+                            </p>
+                            <button type="button" id = "modal-btn" class="btn btn-outline-dark mt-1" data-toggle="modal" data-target="#chel-modal">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Chelsea Dash-->
+                <!--Start of RFM -->
+                <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
+                    <div id = "w-1" class="card mx-auto" style="width: 23rem; height: 30rem; background: rgb(215, 240, 255);">
+                        <img id = "intro-img" class="card-img-top mx-auto" src="css/images/RFM.png" height="200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">RFM Analysis & Clustering</h5>
+                            <p class="card-text">
+                                Categorized customers for an Online Retail into (Recency, Frequency, Monetary Value) RFM segments and computed RFM score for each customer.
+                                Based on RFM values, segmented customers into 5 distinct clusters.
+                            </p>
+                            <button type="button" id = "modal-btn" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#rfm-modal">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--End of RFM-->
+            </div>
+            <!--End of Row 1-->
+            <!---Row 2 Starts-->
+            <div class="row">
+                <!---Chat Bot Card-->
+                <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
+                    <div id = "w-1" class="card mx-auto" style="width: 23rem; height: 30rem;background: rgb(215, 240, 255);">
+                        <img id = "intro-img" class="card-img-top mx-auto" src="css/images/chat.png" height="200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Chat Bot</h5>
+                            <p class="card-text">
+                                The chat-bot is trained to convey my personal details details 
+                                using Deep Neural Network (DNN). The DNN model is deployed on heroku and is integrated into 
+                                this website using AJAX get and post requests. The bot can be accessed by clicking 'Chat Bot' button 
+                                at the bottom right corner.
+                            </p>
+                            <button type="button" id = "modal-btn" class="btn btn-outline-dark" style="margin-top: -30px;" data-toggle="modal" data-target="#cb-modal">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--End card 1-->
+                <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
+                    <div id = "w-1" class="card mx-auto" style="width: 23rem;height: 30rem; background: rgb(215, 240, 255);">
+                        <img id = "intro-img" class="card-img-top mx-auto" src="css/images/rec.png" height="200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Movie Recommendation Web App</h5>
+                            <p class="card-text">
+                                End-to-end movie recommender engine using Flask web-framework along with a sophisticated front-end. 
+                                The web app is deployed on Google Cloud Platform.
+                            </p>
+                            <button type="button" id = "modal-btn" class="btn btn-outline-dark mt-5" data-toggle="modal" data-target="#rm-modal">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--End card 2-->
+                <!--End card 1-->
+                
+                <!--End  Card 2-->
+                <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
+                    <div id = "w-1" class="card mx-auto" style="width: 23rem; height: 30rem; background: rgb(215, 240, 255);">
+                        <img id = "intro-img" class="card-img-top mx-auto" src="css/images/churn.png" height="200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Churn Web App</h5>
+                            <p class="card-text">
+                                Simple web-app to predict customer churn for telecom company that uses KNN and Flask web-framework. 
+                                The web-app is deployed on Heroku.
+                            </p>
+                            <button type="button" id = "modal-btn" class="btn btn-outline-dark mt-5" data-toggle="modal" data-target="#ch-modal">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--Modals-->
+        <!-- Modal Seg-->
+        <div class="modal fade bd-example-modal-lg" id="seg-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Customer Segmentation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <h5>Summary</h5>
+                            <p>Segmented Customers into 3 Clusters:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Bogo Group:</b> Comprised mostly of female customers who received a lot of 
+                                    Buy One Get One offers. This group had the highest income, highest expenditure and became members between
+                                    2015 to 2017.
+                                </li>
+                                <li class="list-group-item"><b>Passive Group:</b> Comprised mostly of male customers who received highest number of 
+                                    informational offers. This group had good view rate for the offers but they hardly ever opted in and completed 
+                                    transactions using these offers. They also had lowest income of any group and only recently became members.
+                                </li>
+                                <li class="list-group-item"><b>Discount Group:</b> Comprised mostly of customers who had gender marked as other followed by females,
+                                    and received highest number of discount offers. This group completed highest number of transactions and finally,
+                                    these customers have been the part of starbucks consistently since 2013.
+                                </li>
+                                
+                            </ul>
+                            <h5 class="mt-2">Technologies Used</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Primary Programming Language:</b> Python</li>
+                                <li class="list-group-item"><b>Data Manipulation:</b> Pandas</li>
+                                <li class="list-group-item"><b>Data Visualization:</b>Matplotlib & Seaborn</li>
+                                <li class="list-group-item"><b>Scaling:</b> Scikit-Learn Standard Scaler</li>
+                                <li class="list-group-item"><b>Dimension Reduction:</b> Scikit-Learn Principle Component Analysis (PCA)</li>
+                                <li class="list-group-item"><b>Clustering:</b> Scikit-Learn K-Means and Silhouette Score as metric </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="https://github.com/onkarane/customer-segmentation" class="btn btn-primary" id = 'git-link' target="_blank">
+                        <i id = "git-btn" class="fab fa-github-square fa-lg mr-1"></i>
+                        Github
+                    </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--End of modal seg-->
+        <!---Modal Chelsea Analytics-->
+        <div class="modal fade bd-example-modal-lg" id="chel-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Soccer Analytics Dashboard</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <h5>Summary</h5>
+                            <p>Development highlights include:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Scrapping:</b> Used FireFox headless browser and Selenium to scrape premier league
+                                    website. The elements to be extracted were identified using their tags, xpath, class names, appropriate sleep was 
+                                    included in the script to make sure all the required details are loaded and captured properly.
+                                </li>
+                                <li class="list-group-item"><b>Data Cleaning:</b> Filtered extra data extracted such as converting goal minutes into integer values
+                                    by removing ' behind the number, converted extra time i.e 90 + 3 into proper format i.e 93, 
+                                    stripped unnecessary information and retrieved player name.
+                                </li>
+                                <li class="list-group-item"><b>Data Storing:</b> Categorized the scrapped data into players.csv for player information,
+                                    match.csv for match information and stats.csv for match stats. In addition, the script is designed to generate unique 
+                                    ids for each player, match and stats previous and future both which can act as primary keys and foreign keys. 
+                                </li>
+                                <li class="list-group-item"><b>Data Update:</b> The script runs on 8pm every Wednesday, Saturday, Sunday using Crontab 
+                                    so that the data is always updated and so is the visualization.
+                                </li>
+                                <li class="list-group-item"><b>Data Visualization:</b> The Dashboard is created in Tableau and displays game stats for 
+                                    each team Chelsea has faced for the year 2020-21. It also shows Chelsea's top players and win,loss,tie count. Their win 
+                                    count has apparently improved since hiring new manager in 2021.
+                                </li>
+                                
+                            </ul>
+                            <h5 class="mt-2">Technologies Used</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Primary Programming Language:</b> Python</li>
+                                <li class="list-group-item"><b>Scrapping:</b> Selenium</li>
+                                <li class="list-group-item"><b>Data Manipulation:</b> Pandas</li>
+                                <li class="list-group-item"><b>Visualization:</b> Tableau </li>
+                                <li class="list-group-item"><b>Scheduling:</b> Crontab </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="https://github.com/onkarane/soccer-analysis" class="btn btn-primary" id = 'git-link' target="_blank">
+                        <i id = "git-btn" class="fab fa-github-square fa-lg mr-1"></i>
+                        Github
+                    </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!---End of Modal Chelsea Analytics-->
+        <!--RFM Analysis-->
+        <div class="modal fade bd-example-modal-lg" id="rfm-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">RFM Analysis & Clustering</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <h5>Summary</h5>
+                            <p>Development highlights include:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Data Cleaning:</b> A significant amount of time was put into identifying duplicate transactions, 
+                                    null values related to customers such as customer id, irrelevant transaction not related to customer such as postage, carrier fee 
+                                    incurred by the company.
+                                </li>
+                                <li class="list-group-item"><b>RFM: </b> Each customer was put in an RFM Segment such as 444 and from that an associated RFM 
+                                    score was calculated. Customers having score of 12 and 9 and greater than 9 were top customers, while those having score of less than 9 
+                                    and equal to 6 were the customers with potential finally customers with score less than 6 needed attention.
+                                </li>
+                                <li class="list-group-item"><b>Data Preprocessing:</b> Fixed right skewness of the data by applying log transformation. Before, log
+                                    transformation was applied, fixed negative and 0 values. Finally scaled the values to standardize the mean and variance.
+                                </li>
+                                <li class="list-group-item"><b>Clustering:</b> Using K-Means Clustering segmented customers into 5 distinct clusters. For cluster 0 and 4
+                                    recency was most important factor, for cluster 1 and 3 frequency followed by monetary value were important, while for cluster 2 frequency 
+                                    was important.
+                                </li>
+                                
+                            </ul>
+                            <h5 class="mt-2">Technologies Used</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Primary Programming Language:</b> Python</li>
+                                <li class="list-group-item"><b>Data Manipulation:</b> Pandas</li>
+                                <li class="list-group-item"><b>Scaling:</b> Scikit-Learn Standard Scaler</li>
+                                <li class="list-group-item"><b>Dimension Reduction:</b> Scikit-Learn Principle Component Analysis (PCA)</li>
+                                <li class="list-group-item"><b>Clustering:</b> Scikit-Learn K-Means and Silhouette Score as metric </li>
+                                <li class="list-group-item"><b>Data Visualization:</b>Matplotlib & Seaborn</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="https://github.com/onkarane/rfm-analysis" class="btn btn-primary" id = 'git-link' target="_blank">
+                        <i id = "git-btn" class="fab fa-github-square fa-lg mr-1"></i>
+                        Github
+                    </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--End of RFM Analysis-->
+        <!--Chat Bot Modal-->
+        <div class="modal fade bd-example-modal-lg" id="cb-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Chat Bot</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <h5>Summary</h5>
+                            <p>Development highlights include:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Data:</b> Most of the data required to train the chat bot model was generated manually by identifying
+                                    common questions, and the details the bot was supposed to display and stored in intents.json file.
+                                </li>
+                                <li class="list-group-item"><b>Design & Training: </b> The python script checks if the intents.json file was modified after the model 
+                                    was trained if so the model will be retrained or the script will simply retrieve saved model. The model is trained using 
+                                    Deep Neural Networks (DNN) from the Tflearn library that uses tensorflow. Additional measures have been included to make sure 
+                                    the reply given by the model has at least a confidence level of 70%
+                                </li>
+                                <li class="list-group-item"><b>Web-App:</b> The model is deployed to heroku cloud using the flask web-framework.
+                                </li>
+                                <li class="list-group-item"><b>Website Integration:</b> The bot is integrated into the website by using JQuery 'get' requests.
+                                    The chat bot interface can thus be asynchronously updated. Additional, jquery is embedded in the site to wake the server from 
+                                    idle state once the user access the website.
+                                </li>
+                                
+                            </ul>
+                            <h5 class="mt-2">Technologies Used</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Primary Programming Language:</b> Python</li>
+                                <li class="list-group-item"><b>Modeling:</b> Tensorflow 2</li>
+                                <li class="list-group-item"><b>Web-Framework & Cloud:</b> Flask & Heroku</li>
+                                <li class="list-group-item"><b>Website-Integration:</b> JQuery Get requests</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="https://github.com/onkarane/chat-bot" class="btn btn-primary" id = 'git-link' target="_blank">
+                        <i id = "git-btn" class="fab fa-github-square fa-lg mr-1"></i>
+                        Github
+                    </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--End of Chat Bot Modal-->
+        <!--Movie Recommendation-->
+        <div class="modal fade bd-example-modal-lg" id="rm-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Chat Bot</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <h5>Summary</h5>
+                            <p>Development highlights include:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Technique:</b> Used collaborative filtering to predict the movie recommendations for the 
+                                    given user based on users with similar taste. The model takes 3 movies names and associated ratings with them as the input 
+                                    and predicts next five movies the user may like to watch.
+                                </li>
+                                <li class="list-group-item"><b>Modeling: </b> Benchmarked Singular Value Decomposition (SVD), SlopOne, 
+                                    Non-negative Matrix Factorization (NMF), NormalPredictor, KNNBaseline, KNNBasic, KNNWithMeans, 
+                                    KNNWithZScore, BaselineOnly, CoClustering algorithms and selected KNNBaseline as it had highest RMSE score.
+                                </li>
+                                <li class="list-group-item"><b>Web App:</b> Created a web-app using flask web-framework, front-end using bootstrap and css3
+                                    and uploaded the model along with the framework to Google Cloud Platform.
+                                </li>
+                                
+                            </ul>
+                            <h5 class="mt-2">Technologies Used</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Primary Programming Language:</b> Python</li>
+                                <li class="list-group-item"><b>Data Manipulation:</b> Pandas</li>
+                                <li class="list-group-item"><b>Web-Framework:</b> Flask</li>
+                                <li class="list-group-item"><b>Front-End:</b> HTML5, Boostrap4 and Css3</li>
+                                <li class="list-group-item"><b>Cloud:</b> Google Cloud Platform.</li>
+                                <li class="list-group-item"><b>Machine Learning:</b> Scikit-Learn Surprise</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="https://github.com/onkarane/movie-recommender-engine" class="btn btn-primary" id = 'git-link' target="_blank">
+                        <i id = "git-btn" class="fab fa-github-square fa-lg mr-1"></i>
+                        Github
+                    </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--End of Movie Recommendation-->
+        <!--Churn-->
+        <div class="modal fade bd-example-modal-lg" id="ch-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Chat Bot</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <h5>Summary</h5>
+                            <p>Development highlights include:</p>
+                            <p>Selected RandForest Classifier based on Modal Accuracy to predict whether a customer will churn or not for a telecom company. </p>
+                            <h5 class="mt-2">Technologies Used</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Primary Programming Language:</b> Python</li>
+                                <li class="list-group-item"><b>Data Manipulation:</b> Pandas</li>
+                                <li class="list-group-item"><b>Web-Framework:</b> Flask</li>
+                                <li class="list-group-item"><b>Front-End:</b> HTML5, Boostrap4 and Css3</li>
+                                <li class="list-group-item"><b>Cloud:</b> Heroku</li>
+                                <li class="list-group-item"><b>Machine Learning:</b> Scikit-Learn RandomForest</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="https://github.com/onkarane/telco-churn" class="btn btn-primary" id = 'git-link' target="_blank">
+                        <i id = "git-btn" class="fab fa-github-square fa-lg mr-1"></i>
+                        Github
+                    </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--End of Churn-->
+        <!-- Chat Bot-->
+        <div class="modal fade" id="chat-bot" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered" role="document">
+                <div class="modal-content" style="background: rgb(241, 244, 247);">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div>
+                            <h6 class="text-muted text-center"><i>Please wait 30 seconds on first try!</i></h6>
+                            <div id = "chat" class="mx-auto card">
+                              <div id = "msg-box" class="message_holder card-body">
+                                  <div id = "reply">Ask some questions! Such as certification, GPA, education</div>
+                              </div>
+                      
+                              <form action="" method="POST" class="card-footer">
+                                <input hidden type="text" class="username" value="onkar" />
+                                <div class="form-inline mt-2">
+                                  <input  type="text" class="message form-control" id="messageInput" placeholder="Messages"/>
+                                  <input type="submit" id = "submitBtn" class="btn btn-primary ml-2"/>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--End of chat bot modal seg-->
+        <!--Floating Button-->
+        <div>
+            <button data-toggle="modal" data-target="#chat-bot" class="float btn">
+                <div id="float-text">
+                    Chat Bot<i class="fas fa-headset my-float"></i>
+                </div>
+            </button>
+        </div>
+        <!--End of floating button-->
+        
+        <!--Footer-->
+        <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+            <footer>
+                <div class="row my-5 justify-content-center py-5">
+                    <div class="col-11">
+                        <div class="row ">
+                            <div class="col-md-4 col-sm-4 col-12 mx-auto a mb-3">
+                                <h3 class="mb-md-0 mb-2">ONKAR</h3>
+                                <p id = "info" class="text-muted mt-3">
+                                    This site was created using Bootstrap4, HTML5 & CSS. The code is 
+                                    available on <a href="">Github</a> <br/>
+                                    <h6 class="mt-55 mt-2 text-muted bold-text"><span><i class="fa fa-envelope mr-2" style="color:rgb(98, 179, 255);" aria-hidden="true"></i></span>onkrane@gmail.com
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-12">
+                                <h6 class="mb-2 mb-lg-3 bold-text "><b>MENU</b></h6>
+                                <ul id = "imp-links" class="list-unstyled text-muted">
+                                    <li class="mb-1">
+                                        <a href="home.html">Home</a>
+                                    </li>
+                                    <li class="mb-1">
+                                        <a href="education.html">Education</a>
+                                    </li>
+                                    <li class="mb-1">
+                                        <a href="work.html">My Work</a>
+                                    </li>
+                                    <li class="mb-1">
+                                        <a href="viz.html">Visualization</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-12">
+                                <h6 class="mb-3 mb-lg-4 bold-text mt-sm-0 mt-3"><b>CONTACT</b></h6>
+                                <p class="text-muted mb-0 pb-0 bold-text"> 
+                                    <span class="mx-2">
+                                        <a href="https://github.com/onkarane" target="_blank" style="color:rgb(98, 179, 255);">
+                                        <i class="fab fa-github-square fa-2x" aria-hidden="true"></i>
+                                        </a></span>
+                                     <span class="mx-2">
+                                        <a href="https://www.linkedin.com/in/onkar-rane-154a89141/" target="_blank" style="color:rgb(98, 179, 255);">
+                                        <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></span>                     
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!--End of footer-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var url = 'https://chat-bot-onkar.herokuapp.com/?message=hello';
+                $.get(url, function(data){
+                    console.log(data);
+                });
+            });
+        </script>
+        <script>
+            $('#submitBtn').click(function(e){
+                      e.preventDefault();
+                      var msg = $('#messageInput').val();
+                      var url = 'https://chat-bot-onkar.herokuapp.com/?message=' + msg;
+                      $('#messageInput').val("");
+                      $( 'div.message_holder' ).append( '<div id = "input">'+msg+'</div>' )
+                      $.get(url, function(data){
+                          console.log(data);
+                          $( 'div.message_holder' ).append( '<div id = "reply">'+data+'</div>' )
+                      });
+                  });
+        </script>
+    </body>
+</html>
