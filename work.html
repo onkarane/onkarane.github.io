@@ -6,6 +6,16 @@
         <title>Work</title>
         <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5W619G9GLG"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5W619G9GLG');
+        </script>
+       
         <!--Load stylesheets-->
         <link rel="stylesheet" href="css/work.css">
 
@@ -49,9 +59,45 @@
         </header>
         <!--End header-->
         <div class="container">
+            <!--First Row-->
             <div class="row">
-                <!--Customer Segmentation-->
+                <!--Yelp Pipeline Segmentation-->
                 <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
+                    <div id = "w-1" class="card mx-auto" style="width: 23rem; height: 30rem;background: rgb(215, 240, 255);">
+                        <img id = "intro-img" class="card-img-top mx-auto" src="css/images/flow.png" height="200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Yelp ETL Pipeline</h5>
+                            <p class="card-text">
+                                ETL Pipeline to transform unstructured JSON data with Pyspark and upload
+                                the data to AWS S3 to be copied into the AWS Redshift cloud data warehouse. The pipeline is orchestrated using Apache Airflow.
+                            </p>
+                            <button type="button" id = "modal-btn" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#etl-modal">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Yelp Pipeline Segmentation-->
+                <!--Stock Data Pipeline-->
+                <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
+                    <div id = "w-1" class="card mx-auto" style="width: 23rem; height: 30rem;background: rgb(215, 240, 255);">
+                        <img id = "intro-img" class="card-img-top mx-auto" src="css/images/dashboard.png" height="200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Stock Data Pipeline & Dashboard</h5>
+                            <p class="card-text">
+                                Serverless Data Pipeline to move stock market data from the S3 data lake to PostgreSQL on AWS RDS. Plotly Dash 
+                                Dashboard to get the real-time stock prices, financial
+                                overview, price forecast for next three months, historical stock performance.
+                            </p>
+                            <button type="button" id = "modal-btn" class="btn btn-outline-dark" data-toggle="modal" data-target="#stock-modal">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--end of Stock Data Pipeline-->
+                 <!--Customer Segmentation-->
+                 <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
                     <div id = "w-1" class="card mx-auto" style="width: 23rem; height: 30rem;background: rgb(215, 240, 255);">
                         <img id = "intro-img" class="card-img-top mx-auto" src="css/images/segmentation.png" height="200" alt="Card image cap">
                         <div class="card-body">
@@ -67,6 +113,9 @@
                     </div>
                 </div>
                 <!--End Customer Segmentation-->
+            </div>
+            <!--end of first row-->
+            <div class="row">
                 <!--Start of Chelsea Dashboard-->
                 <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
                     <div id = "w-1" class="card mx-auto" style="width: 23rem; height: 30rem; background: rgb(215, 240, 255);">
@@ -102,10 +151,6 @@
                     </div>
                 </div>
                 <!--End of RFM-->
-            </div>
-            <!--End of Row 1-->
-            <!---Row 2 Starts-->
-            <div class="row">
                 <!---Chat Bot Card-->
                 <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
                     <div id = "w-1" class="card mx-auto" style="width: 23rem; height: 30rem;background: rgb(215, 240, 255);">
@@ -124,7 +169,12 @@
                         </div>
                     </div>
                 </div>
-                <!--End card 1-->
+                <!--End Chat Bot-->
+            </div>
+            <!--End of Row 1-->
+            <!---Row 2 Starts-->
+            <div class="row">
+                
                 <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
                     <div id = "w-1" class="card mx-auto" style="width: 23rem;height: 30rem; background: rgb(215, 240, 255);">
                         <img id = "intro-img" class="card-img-top mx-auto" src="css/images/rec.png" height="200" alt="Card image cap">
@@ -159,10 +209,114 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="col-sm-4 col-md-6 col-lg-4 mt-3">
+                    <div id = "w-1" class="card mx-auto" style="width: 23rem; height: 30rem; background: rgb(215, 240, 255);">
+                        <img id = "intro-img" class="card-img-top mx-auto" src="css/images/login.png" height="200" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Dev. Project: Job Portal</h5>
+                            <p class="card-text">
+                                Website for candidates to apply for jobs and delete/update/view the application. In addition, the recruiters
+                                can post jobs and updated/view/delete posted jobs. The project is implemented in ASP.Net Core and PHP with SQL Server for backend. 
+                            </p>
+                            <button type="button" id = "modal-btn" class="btn btn-outline-dark" onclick="location.href='https://github.com/onkarane/job_portal'">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!--Modals-->
+        <!--ETL Modal-->
+        <div class="modal fade bd-example-modal-lg" id="etl-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Yelp ETL Pipeline</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <h5>Summary</h5>
+                            <p>
+                                The etl pipeline transforms the unstructured json data into structured csv files using Apache Spark 
+                                and uploads them to Amazon S3. The csv files from s3 are then inserted into the Data Warehouse created 
+                                and hosted on Amazon Redshift. Once the data is inserted into the warehouse, the csv files are then deleted from s3.
+                            </p>
+                            <h5>Airflow Work Flow</h5>
+                            <img src="css/images/pipeline.png" class="img-fluid">
+                            
+                            <h5 class="mt-2">Technologies Used</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Primary Programming Language:</b> Python</li>
+                                <li class="list-group-item"><b>Data Manipulation:</b> Pandas, Pyspark</li>
+                                <li class="list-group-item"><b>Orchestration:</b> Apache Airflow</li>
+                                <li class="list-group-item"><b>Data Lake:</b> Amazon S3</li>
+                                <li class="list-group-item"><b>Data Warehouse:</b> Amazon Redshift</li>
+                                <li class="list-group-item"><b>SQL:</b> PostgreSQL (PL/SQL) </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="https://github.com/onkarane/etl_pipeline" class="btn btn-primary" id = 'git-link' target="_blank">
+                        <i id = "git-btn" class="fab fa-github-square fa-lg mr-1"></i>
+                        Github
+                    </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--end of ETL Modal-->
+        <!--Stock Data Pipeline-->
+        <div class="modal fade bd-example-modal-lg" id="stock-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Stock Data Pipeline & Dashboard</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <h5>Summary</h5>
+                            <p>
+                                The dashboard provides high level view of the company balance sheets and quarterly finances for stock traders to 
+                                identify, analyze, and react to changes in the company stock prices. Serverless Data pipeline keeps the data up-to-date 
+                                all the time.
+                            </p>
+                            <h5>Architecture</h5>
+                            <img src="css/images/flowchart.png" class="img-fluid">
+                            
+                            <h5 class="mt-2">Technologies Used</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>Primary Programming Language:</b> Python</li>
+                                <li class="list-group-item"><b>Data Manipulation:</b> Pandas</li>
+                                <li class="list-group-item"><b>Orchestration:</b> Amazon -  CloudWatch,  Lambda</li>
+                                <li class="list-group-item"><b>Data Lake:</b> Amazon S3</li>
+                                <li class="list-group-item"><b>Database:</b> Amazon RDS - PostgreSQL (PL/SQL)</li>
+                                <li class="list-group-item"><b>Prediction:</b> FbProphet </li>
+                                <li class="list-group-item"><b>Cloud Environment:</b> Heroku, AWS </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="https://github.com/onkarane/stock-dashboard" class="btn btn-primary" id = 'git-link' target="_blank">
+                        <i id = "git-btn" class="fab fa-github-square fa-lg mr-1"></i>
+                        Github
+                    </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--End of Stock Data Pipeline-->
+    
         <!-- Modal Seg-->
         <div class="modal fade bd-example-modal-lg" id="seg-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
