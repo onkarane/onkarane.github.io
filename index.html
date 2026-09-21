@@ -43,7 +43,7 @@
         <div class="route-index route-index-next" aria-hidden="true"><span>05</span><small>NEXT<br />CHAPTER</small></div>
         <div class="r-experience-heading experience-heading-block"><h2 id="experience">Experience</h2><p>TURNING DATA<br />INTO PROGRESS</p></div>
         <p class="r-experience-summary experience-summary">A track record of building and operating data systems at scale, in business-critical environments.</p>
-        <div class="r-experience-row experience-row"><p class="experience-date">Aug 2021 — Present<br /><span>Singapore &amp; USA</span></p><p class="experience-role"><strong>Data Engineer</strong><br /><span>Partners Group</span></p><p class="experience-copy">Build and own production data platforms and business-critical products, lead engineering work, and partner across teams from architecture through operations.</p></div>
+        <div class="r-experience-row experience-row"><p class="experience-date">Aug 2021 — Present<br /><span>Singapore &amp; USA</span></p><p class="experience-role"><strong>Data Engineer</strong><br /><span>Partners Group</span></p><p class="experience-copy">Own systems and applications for the portfolio monitoring product group, lead technical delivery, and manage budgets, vendor relationships, project plans, and stakeholders.</p></div>
       </section>
 
       <section class="section-shell experience-detail" aria-labelledby="experience-detail-title">
@@ -58,10 +58,13 @@
             <article><span>Data platform</span><h3>Replaced paid data submissions with a Snowflake platform.</h3><p>Built an API intake and dbt medallion pipeline with Airflow (MWAA) data quality checks. The platform saves about $75,000 in annual licensing costs; I also steward its Collibra catalog.</p><strong>Snowflake · dbt · Airflow · Collibra</strong></article>
             <article><span>Analytics</span><h3>Brought 8 TB of music streaming data into investment analysis.</h3><p>Led two engineers in the Luminate data onboarding, shaping its Snowflake architecture and model alongside Cortex Agents and an MCP layer. Analyst effort fell by more than 50%.</p><strong>Snowflake · Data modeling · Cortex Agents · MCP</strong></article>
             <article><span>In design</span><h3>Modeled uneven ownership for a €300M fund commitment.</h3><p>Partnered with business teams on excuse rights data models and allocation logic for the Q4 2026 onboarding and future deals.</p><strong>Investment data · Allocation logic · Stakeholder partnership</strong></article>
+            <article><span>Product leadership</span><h3>Owned systems and applications for portfolio monitoring.</h3><p>Managed budgets, vendor contracts, project planning, and stakeholders; mentored engineers and reviewed designs and code. Led a five-vendor RFP to select a digital boardroom builder for the founders and executive team.</p><strong>Product ownership · Technical leadership · Vendor selection</strong></article>
             <article><span>Performance</span><h3>Cut a comparables pipeline's processing time by 30%.</h3><p>Improved the S&amp;P Capital IQ benchmarking pipeline with denormalization, materialized views, query plan tuning, and incremental loads.</p><strong>SQL · Query planning · Incremental loads</strong></article>
             <article><span>Cloud migration</span><h3>Migrated a 3 TB SQL Server database to AWS Aurora.</h3><p>Moved the on-premises workload and reduced annual licensing and hardware costs by approximately $25,000.</p><strong>AWS Aurora · SQL Server · Cloud migration</strong></article>
-            <article><span>AI products</span><h3>Made portfolio data easier to use and products faster to ship.</h3><p>Built a FastMCP server for natural language portfolio data analysis and an AI development harness adopted by 15 engineers across four departments, cutting feature delivery time by over 50%.</p><strong>FastMCP · AWS AI-DLC · Java · React · Data quality</strong></article>
-            <article><span>Automation</span><h3>Replaced manual workflows with production applications.</h3><p>Built a NAV oversight application in one month, replacing Excel tracking and saving two FTEs per year. Also automated payment imports with Python, Lambda, and SQS on a 15-minute cadence.</p><strong>Python · AWS Lambda · SQS · EC2 · RDS</strong></article>
+            <article><span>AI products</span><h3>Connected portfolio data to natural-language analysis.</h3><p>Built a FastMCP server over portfolio-company databases and connected it to LLMs through EPAM AI DIAL, letting business users query and compare portfolio data in natural language.</p><strong>FastMCP · EPAM AI DIAL · MCP</strong></article>
+            <article><span>Developer tooling</span><h3>Cut feature delivery time by over 50%.</h3><p>Designed an AI development harness using AWS AI-DLC and Cursor CLI, with custom Java, React, and data-quality skills. Fifteen engineers across four departments adopted it.</p><strong>AWS AI-DLC · Cursor CLI · Java · React · Data quality</strong></article>
+            <article><span>Applications</span><h3>Replaced Excel-based NAV oversight with a production app.</h3><p>Built a net asset value oversight application in one month with Claude Code, a Java backend, React frontend, AWS EC2, and RDS. It saves two FTEs per year.</p><strong>Claude Code · Java · React · AWS EC2 · RDS</strong></article>
+            <article><span>Automation</span><h3>Removed manual entry from recurring payment imports.</h3><p>Built a queue-based import service with Python, AWS Lambda, and SQS to process payments every 15 minutes.</p><strong>Python · AWS Lambda · SQS</strong></article>
           </div>
         </div>
         <div class="research-row"><span>Earlier</span><div><h3>Graduate Research Assistant</h3><p>Colorado State University · Jan 2021 — May 2021</p></div><p>Researched representation of Indigenous peoples in academia with the College of Business, contributing insights to the department's academic framework.</p></div>
@@ -69,12 +72,12 @@
 
       <section class="section-shell selected-build" aria-labelledby="trustops-title">
         <div class="section-rail" aria-hidden="true"><span>07</span><small>PERSONAL<br />BUILD</small></div>
-        <header class="section-header"><h2 id="trustops-title">TrustOps<br />Scam triage pipeline</h2><p>A current build exploring real-time classification and evaluation, with human review for uncertain or high-risk cases.</p></header>
+        <header class="section-header"><h2 id="trustops-title">TrustOps<br />Scam triage pipeline</h2><p>A current build exploring real-time classification and evaluation, with human review for uncertain or high-risk cases. <a href="https://github.com/onkarane/trustops" target="_blank" rel="noreferrer">View the code ↗</a></p></header>
         <div class="trustops-build">
           <p><span>01 / Model</span>Fine-tuned Qwen2.5-0.5B with LoRA to classify scam type and risk level, measured against a rules baseline on macro F1 and high-risk recall.</p>
           <p><span>02 / Stream</span>Streams cases through Kafka to a typed FastAPI scoring service, routing invalid or high risk output to human review.</p>
           <p><span>03 / Quality</span>Uses reproducible SHA-256 data splits, schema validation, and CI that tests and evaluates every push.</p>
-          <p class="trustops-stack">Python · Kafka · Hugging Face · FastAPI · Docker · GitHub Actions</p>
+          <p class="trustops-stack">Python · Apache Kafka · Hugging Face Transformers · TRL · PEFT · FastAPI · Pydantic · pytest · Docker · GitHub Actions</p>
         </div>
       </section>
 
@@ -86,7 +89,7 @@
           <dl>
             <div><dt>Data engineering</dt><dd>Snowflake, dbt, Python, SQL, PySpark, Kafka, Airflow, data modeling, ETL, medallion architecture</dd></div>
             <div><dt>Cloud platform</dt><dd>AWS S3, Lambda, SQS, EC2, RDS, Aurora, Redshift, Athena, MWAA, CloudWatch</dd></div>
-            <div><dt>AI systems</dt><dd>MCP, FastMCP, Cortex Agents, semantic views, FastAPI, LoRA, model evaluation</dd></div>
+            <div><dt>AI systems</dt><dd>MCP, FastMCP, Cortex Agents, semantic views, EPAM AI DIAL, AWS AI-DLC, Cursor CLI, Claude Code, FastAPI, LoRA, model evaluation</dd></div>
             <div><dt>Delivery</dt><dd>Terraform, Docker, GitHub Actions, Collibra, Java, React, Streamlit, Tableau</dd></div>
           </dl>
         </div>
@@ -96,7 +99,7 @@
         <div class="section-rail" aria-hidden="true"><span>09</span><small>VERIFIED<br />SIGNALS</small></div>
         <header class="section-header credentials-header"><h2 id="credentials-title">Credentials,<br />open for verification.</h2><p>Each certificate links to the issuer record. No screenshots, no unverifiable badge wall.</p></header>
         <div class="credential-list">
-          <a href="https://achieve.snowflake.com/63951943-c15e-45a6-b387-5a23ec471b28#acc.neEC0547" target="_blank" rel="noreferrer"><span>Snowflake</span><strong>SnowPro Advanced Data Engineer</strong><em>Verify ↗</em></a>
+          <a href="https://achieve.snowflake.com/63951943-c15e-45a6-b387-5a23ec471b28#acc.neEC0547" target="_blank" rel="noreferrer"><span>Snowflake</span><strong>SnowPro Advanced: Data Engineer</strong><em>Verify ↗</em></a>
           <a href="https://achieve.snowflake.com/2c95e5a8-c210-4a6c-a6ab-43f1cae70bc2" target="_blank" rel="noreferrer"><span>Snowflake</span><strong>SnowPro Core</strong><em>Verify ↗</em></a>
           <a href="https://www.credly.com/badges/40972552-c79a-4499-9462-2537189c20b2/linked_in_profile" target="_blank" rel="noreferrer"><span>AWS</span><strong>Solutions Architect – Associate</strong><em>Verify ↗</em></a>
           <a href="https://www.credly.com/badges/b4a4ec8e-bf08-4eaa-8f1e-4276fa41a101/linked_in_profile" target="_blank" rel="noreferrer"><span>Python Institute</span><strong>PCAP™ Certified Associate Python Programmer</strong><em>Verify ↗</em></a>

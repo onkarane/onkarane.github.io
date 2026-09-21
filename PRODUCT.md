@@ -48,12 +48,15 @@ Recruiters and engineering leaders will usually scan the site quickly on desktop
 - Current title: Data Engineer at Partners Group, Aug 2021–Present; target role: Senior Data Engineer.
 - Snowflake API submission platform with dbt medallion layers and Airflow quality checks, saving about $75,000 per year in licenses.
 - Luminate private markets data onboarding: 8 TB of music streaming data, led two engineers, and cut analyst effort by more than 50%.
+- Product ownership across portfolio monitoring systems and applications, including budgets, vendor contracts, planning, stakeholder work, mentoring, design and code review.
+- Led a five-vendor RFP to select the digital boardroom builder for the founders and executive team.
 - S&P Capital IQ benchmarking pipeline tuning that improved processing time by 30%.
 - Migration of a 3 TB SQL Server database to AWS Aurora, saving about $25,000 per year in licensing and hardware.
-- FastMCP portfolio data server, plus an AI development harness adopted by 15 engineers across four departments and cutting delivery time by over 50%.
-- NAV oversight application built in one month, replacing Excel tracking and saving two FTEs per year.
-- Automated payment imports using Python, AWS Lambda, and SQS on a 15-minute cadence.
-- Current personal build: TrustOps, a Kafka, LoRA, and FastAPI scam triage and evaluation pipeline.
+- FastMCP portfolio data server connected to LLMs through EPAM AI DIAL for natural-language analysis.
+- AI development harness built with AWS AI-DLC and Cursor CLI, adopted by 15 engineers across four departments, and cutting feature delivery time by over 50%.
+- NAV oversight application built in one month with Claude Code, Java, React, EC2, and RDS; replaced Excel tracking and saves two FTEs per year.
+- Queue-based payment import service using Python, AWS Lambda, and SQS; processes payments every 15 minutes and eliminates manual entry.
+- Current personal build: TrustOps, a Qwen2.5-0.5B LoRA fine-tuning, Kafka, and FastAPI scam triage and evaluation pipeline with a human-review path.
 - Master's degree in Computer Information Systems from Colorado State University; graduate certificates in Business Intelligence and Application Development.
 - Current contact email: raneonkar4@gmail.com. Phone number stays off the public site.
 - Current LinkedIn: https://www.linkedin.com/in/onkarane/; GitHub: https://github.com/onkarane.
